@@ -8,13 +8,13 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Proteomics Data Analysis
+title : Basiscursus statistiek voor de levens
 author :
   name : statOmics
   email : lieven.clement@ugent.be
   github : github.com/statOmics
 # NOTE: If replacing this next line with your own URL, you likely want "https://" not "http://"
-production_url : https://statomics.github.io/pda
+production_url : https://statomics.github.io/statistiekBasisCursus
 
 # Tell Github to use the kramdown markdown interpreter
 # (see https://help.github.com/articles/migrating-your-pages-site-from-maruku)
