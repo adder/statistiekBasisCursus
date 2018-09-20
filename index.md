@@ -3,7 +3,7 @@ layout: default
 title: Statistiek
 ---
 ### Introductie
-![IntroFig](./pages/figs/IntroFig.png)
+![IntroFig](./pages/figs/introFig.png)
 
 Deze cursus is een basiscursus statistiek voor studenten in de levenswetenschappen en wordt aan de Universiteit Gent gedoceerd in de Bachelor of Science in de Biologie, Bachelor of Science in de Biochemie en Biotechnologie, Bachelor of Science in de Chemie en Bachelor of Science in de Biomedische Wetenschappen.
 
@@ -40,9 +40,12 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
   - Slides:  [Inleiding](assets/01-Inleiding.pdf)
 
   2. Belangrijke concepten & conventies
-  - Slides: [Concepten][assets/02-Concepten.pdf]
+  - Slides: [Concepten](assets/02-Concepten.pdf)
 
   3. Studiedesign
+
+  - Zelfstudie
+  - Verder wordt voor elke studie die aan bod komt in de latere hoofdstukken in gegaan op het studie design.
 
   4. Data exploratie en beschrijvende statistiek
   - Slides: [Data exploratie](assets/04-DataExploratie.pdf)
