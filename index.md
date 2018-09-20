@@ -2,8 +2,9 @@
 layout: default
 title: Statistiek
 ---
-### Introductie
 ![IntroFig](./pages/figs/introFig.png)
+
+### Achtergrond
 
 Deze cursus is een basiscursus statistiek voor studenten in de levenswetenschappen en wordt aan de Universiteit Gent gedoceerd in de Bachelor of Science in de Biologie, Bachelor of Science in de Biochemie en Biotechnologie, Bachelor of Science in de Chemie en Bachelor of Science in de Biomedische Wetenschappen.
 
@@ -34,7 +35,10 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 - Bachelor of Science in de Biochemie en Biotechnologie: Jeroen Gillis (Jeroen dot Gilis at UGent dot be)
 - Bachelor of Science in de Biomedische Wetenschappen: Elke Debrie (Elke dot Debrie at UGent dot be)
 
-### Statistiek
+### Practisch
+- [Practisch](assets/00-Afspraken.pdf)
+
+### Topics
 
   1. Inleiding
   - Slides:  [Inleiding](assets/01-Inleiding.pdf)
@@ -43,7 +47,6 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
   - Slides: [Concepten](assets/02-Concepten.pdf)
 
   3. Studiedesign
-
   - Zelfstudie
   - Verder wordt voor elke studie die aan bod komt in de latere hoofdstukken in gegaan op het studie design.
 
@@ -60,9 +63,9 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 
   9. Categorische data analyse
 
-  10. Algemeen lineair model
+  10. Algemeen lineair model 
 
 
 ---
 
-##### [lesgever](https://statomics.github.io/pages/about.html)
+##### [Docent: Lieven Clement](https://statomics.github.io/pages/about.html)
