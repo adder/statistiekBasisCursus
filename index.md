@@ -31,8 +31,8 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 ### Assistenten
 
 - Bachelor of Science in de Biologie en Bachelor of Science in de Chemie: Koen Van den Berge (Koen dot VanDenBerge @ UGent dot  be)
-- Bachelor of Science in de Biochemie en Biotechnologie: Jeroen Gillis (jeroen dot gillis at UGent dot be)
-- Bachelor of Science in de Biomedische Wetenschappen: Elke Debrie (elke dot debrie at UGent dot be)
+- Bachelor of Science in de Biochemie en Biotechnologie: Jeroen Gillis (Jeroen dot Gilis at UGent dot be)
+- Bachelor of Science in de Biomedische Wetenschappen: Elke Debrie (Elke dot Debrie at UGent dot be)
 
 ### Statistiek
 
@@ -47,7 +47,7 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
   4. Data exploratie en beschrijvende statistiek
   - Slides: [Data exploratie](assets/04-DataExploratie.pdf)
 
-  5. Statistische Besluitvorming
+  5. Statistische besluitvorming
 
   6. Enkelvoudige lineaire regressie
 
