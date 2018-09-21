@@ -25,9 +25,9 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 
 ### Online cursus
 
-- [e-cursus Statistiek](https://users.ugent.be/~lclement/statistiek/)
-- [cursus in pdf formaat](assets/Statistiek_2018_2019.pdf)
-- [Data]()
+- [e-cursus Statistiek](https://statomics.github.io/statistiekCursusNotas/)
+- [Cursus in pdf formaat](https://statomics.github.io/statistiekCursusNotas/Statistiek_2018_2019.pdf)
+- [Data](https://statomics.github.io/statistiekCursusNotas/data.zip)
 
 ### Assistenten
 
