@@ -48,20 +48,25 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 
   3. Studiedesign
   - Zelfstudie
-  - Tijdens de les wordt er dieper ingegaan op het design van de centrale datasets die worden gebruikt in de latere hoofdstukken.
+  - Tijdens de les wordt er wel in elk hoofdstuk dieper ingegaan op het design van de centrale datasets die worden gebruikt.
 
   4. Data exploratie en beschrijvende statistiek
   - Slides: [Data exploratie](assets/04-DataExploratie.pdf)
 
   5. Statistische besluitvorming
+  - Slides: [Statistische Besluitvorming](assets/05-StatisticalInference.pdf)
 
   6. Enkelvoudige lineaire regressie
+  - Slides: [Enkelvoudige Lineaire Regressie](assets/06-LineaireRegressie.pdf )
 
   7. Variantie analyse
+  - Slides: [Variantie analyse](assets/07-Anova.pdf)
 
   8. Niet-parametrische Statistiek
+  - Slides: [Niet-parametrische Statistiek](assets/08-NietParametrischeStatistiek.pdf)
 
   9. Categorische data analyse
+  - Slides: [Categorische data analyse](assets/09-CategorischeDataAnalyse.pdf)
 
   10. Algemeen lineair model
 
