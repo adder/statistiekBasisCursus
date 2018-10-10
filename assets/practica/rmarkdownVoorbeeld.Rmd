@@ -1,11 +1,23 @@
 ---
-title: R/Markdown voorbeeld
-author: Lieven Clement en Ludger Goeminne
+title: "Intro to MSqRob"
+author: "Lieven Clement en Ludger Goeminne"
+output:
+  html_notebook: default
 ---
 
 # Introductie tot R, RStudio en R Markdown
 
-Met R MarkDown kan je gemakkelijk webpagina's, documenten en slides maken die tekst, R chunks, plots en Latex vergelijkingen bevatten. Tijdens de tutorialsessies zullen we altijd R Markdown gebruiken. R Markdown vervangt scripts en is erg handig omdat je extra opmerkingen kunt toevoegen aan de hoorcolleges en tutorials. Als je iets in vet of cursief wilt benadrukken, gebruik je dubbele sterretjes voor **vet** en enkele sterretjes voor *cursief*. Als je een niet-genummerde lijst wilt toevoegen, gebruik dan een streepje:
+Met R MarkDown kan je gemakkelijk webpagina's, documenten en slides maken die tekst, R chunks, plots en Latex vergelijkingen bevatten. Tijdens de tutorialsessies zullen we altijd R Markdown gebruiken. R Markdown vervangt scripts en is erg handig omdat je extra opmerkingen kunt toevoegen aan de hoorcolleges en tutorials.
+
+## Resultaat bekijken
+Door gebruik te maken van notebooks, kan je de wijzigingen die je maakt onmiddellijk opvolgen op een interactieve manier. 
+Klik op Preview om de html versie van de notebook te zien. 
+
+Je zal zien dat de R-code nog niet is uitgevoerd. Hier komen we verder op terug.
+
+## Opmaak
+
+Als je iets in vet of cursief wilt benadrukken, gebruik je dubbele sterretjes voor **vet** en enkele sterretjes voor *cursief*. Als je een niet-genummerde lijst wilt toevoegen, gebruik dan een streepje:
 
 - Element 1
 - Element 2
@@ -13,7 +25,7 @@ Met R MarkDown kan je gemakkelijk webpagina's, documenten en slides maken die te
 
 Je kunt titels toevoegen met behulp van het hekje \#
 
-# Hoofdtitel met één \#
+# Hoofdtitel met een enkel \#
 
 ## ondertitel 1 met twee \#\#
 
@@ -30,12 +42,24 @@ Hieronder zullen we R-code demonstreren aan de hand van verschillende voorbeelde
 
 Je kunt RStudio bijvoorbeeld gebruiken als een rekenmachine. Code uitvoeren kan je op verschillende manieren
  - door in een stukje code met je muis te klikken en dan via de "Run"-knop bovenaan in de console op "Run current chunck" te klikken.
- - door in een stukje code met je muis te klikken en dan via de toetscombinatie "Ctrl+Enter" of voor Mac "Cmd+Enter" te duwen.
- 
+ - Door op het groene pijltje te klikken rechts van de chunk. 
+
+Telkens je het document opslaat dan wordt de webpagina geupdatet.
+
+Laat de onderstaande code lopen. Sla op en bekijk het resultaat in je html file.
+
 ```{r}
 1+1
 (5-3)+7*10/2
 ```
+
+- Je kan ook alle chunks laten lopen boven of onder de positie waarop je je bevindt via de "Run"-knop bovenaan in de console en dan "Run all Chunks below" of "Run all Chunks above" te selecteren, respectievelijk. Dat is bijvoorbeeld handig als je iets in de analyse hebt veranderd die een effect heeft op de onderstaande berekeningen.
+
+- Je kan ook de R sessie opnieuw starten en alle chunks volledig opnieuw laten lopen. 
+
+- Het voordeel van een notebook is dat je bij kleine wijzigingen niet de volledige notebook opnieuw moet laten lopen, wanneer het volstaat om enkel de chunks te laten lopen die je hebt aangepast. Daarnaast is het hierdoor erg interactief. Telkens je opslaat zie je onmiddellijk de aanpassingen in de html file.
+
+### Commentaar in R-code 
 
 Je kunt ook binnen je stukjes R-code commentaar schrijven. Commentaar laat je voorafgaan door een \#.
 
@@ -119,7 +143,7 @@ x
 x+y
 ```
 
-Vectoren kunnen slechts elementen bevatten van één enkele klasse.
+Vectoren kunnen slechts elementen bevatten van ????n enkele klasse.
 
 ```{r}
 # Een voorbeeld van de character-klasse.
@@ -230,7 +254,7 @@ EndangeredSpecies$taxon
 
 ## Data importeren
 
-Data importeren in R kan via de functie `read.table`. Hierbij moet je het pad naar je bestand definiëren en een separator opgeven (bv. "\\t" als het een tab-delimited file is, "," als het een komma is, etc.). Wij zullen er altijd voor zorgen dat je een werkend bestand kunt importeren. Als je ook offline wil kunnen werken, kan je altijd het bestand downloaden en (in plaats van de hyperlink) verwijzen naar de bestandslocatie op je computer.
+Data importeren in R kan via de functie `read.table`. Hierbij moet je het pad naar je bestand defini??ren en een separator opgeven (bv. "\\t" als het een tab-delimited file is, "," als het een komma is, etc.). Wij zullen er altijd voor zorgen dat je een werkend bestand kunt importeren. Als je ook offline wil kunnen werken, kan je altijd het bestand downloaden en (in plaats van de hyperlink) verwijzen naar de bestandslocatie op je computer.
 
 ```{r}
 path <- "https://raw.githubusercontent.com/statOmics/statistiekBasisCursus/gh-pages/assets/practica/practicum1/data/lovett.dat"
@@ -254,7 +278,3 @@ $$y_i = \beta_0 + \beta_1 x_i + \epsilon_i$$
 Je kunt ook inline-latexcode toevoegen met behulp van enkele \$ - tekens. Bijvoorbeeld het steekproefgemiddelde van y:
 $\bar{y}=\sum\limits_{i=1}^{n}\frac{y_i}{n}$ equals $\bar{y}=$ 
 `r round(mean(y),2)`.
-
-## Compileer het R Markdown-bestand
-
-Je kunt het bestand naar html compileren met de "Knit to HTML"-knop in RStudio.
