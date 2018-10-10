@@ -55,7 +55,7 @@ Voor de ontwikkeling van eigen Rmarkdown notebooks kan je steeds beroep doen op 
 Het is aangeraden om reeds vertrouwd te zijn met R en RStudio alvorens jullie het eerste practicum meevolgen.
 Er wordt verondersteld dat jullie volgende introductie zelfstandig doornemen:
 
-[intro](zelfstudie.md).
+[Intro](zelfstudie.md)
 
 ---
 
