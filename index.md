@@ -45,13 +45,7 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 Tijdens de practica zullen we gebruik maken van het statistisch softwarepakket R, en de grafische user interface RStudio.
 Het is aangeraden dat om een eigen laptop te gebruiken voor de practica waarop je reeds R en RStudio geïnstalleerd hebben.
 
-[Installatie van statistisch software pakket R](pages/software/RStudio_installeren.html)
-
-
-Studenten die wensen gebruik te maken van de PCs in de PC-zalen kunnen Rstudie draaien via [Athena](https://athena.ugent.be). Dat is vaak instabiel. 
-Daarom vinden jullie hier ook een handleiding voor het aanmaken van een portable R/Rstudio versie die je mee kan nemen op USB-stick of op kan slaan op je H-schijf van de universiteit Gent. Zo heb je steeds je eigen software bij de hand zonder afhankelijk te zijn van Athena.
- 
-[Maak een protable versie van het software pakket R](pages/software/portable_RStudio.html)
+[Installatie van statistisch software pakket R](pages/software/RStudio_installeren.html) 
 
 Tijdens de practica zullen we steeds gebruik maken van RMarkdown notebooks die toelaten om tekst, computercode en statistische output te combineren in een bestand. Het laat toe om de resultaten eenvoudig te rapporteren in een webpagina of een pdf bestand. 
 Voor de ontwikkeling van eigen Rmarkdown notebooks kan je steeds beroep doen op de online cursus nota's die heel veel code bevat en een handige RMarkdown-cheatsheet: 
