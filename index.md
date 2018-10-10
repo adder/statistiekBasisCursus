@@ -50,12 +50,12 @@ Het is aangeraden dat om een eigen laptop te gebruiken voor de practica waarop j
 Tijdens de practica zullen we steeds gebruik maken van RMarkdown notebooks die toelaten om tekst, computercode en statistische output te combineren in een bestand. Het laat toe om de resultaten eenvoudig te rapporteren in een webpagina of een pdf bestand. 
 Voor de ontwikkeling van eigen Rmarkdown notebooks kan je steeds beroep doen op de online cursus nota's die heel veel code bevat en een handige RMarkdown-cheatsheet: 
 
-[Rmarkdown Sheetsheet](assets/practica/rmarkdown-cheatsheet.pdf)
+[Rmarkdown Sheetsheet](practica/rmarkdown-cheatsheet.pdf)
 
 Het is aangeraden om reeds vertrouwd te zijn met R en RStudio alvorens jullie het eerste practicum meevolgen.
 Er wordt verondersteld dat jullie volgende introductie zelfstandig doornemen:
 
-[Intro](pages/practica/zelfstudie.md)
+[Intro](practica/zelfstudie.md)
 
 ---
 

@@ -10,11 +10,11 @@ Dat zal het jullie makkelijk zal maken om de practica te studeren en is een idea
 
 Ter voorbereiding van de practica hebben we een RMarkdown bestand aangemaakt die je zelfstandig dient door te nemen voor de practica. 
 
-Het bestand vind je  hier [rmarkdownVoorbeeld.Rmd](https://statomics.github.io/statistiekBasisCursus/assets/practica/rmarkdownVoorbeeld.Rmd).
+Het bestand vind je  hier [rmarkdownVoorbeeld.Rmd](https://statomics.github.io/statistiekBasisCursus/practica/rmarkdownVoorbeeld.Rmd).
 
 Open het bestand in RStudio, en neem het bestand door. 
-Het bestand kan door RStudio gecompileerd worden tot een HTML pagina, en het resultaat vinden jullie in het bestand
-[rmarkdownVoorbeeld](https://statomics.github.io/statistiekBasisCursus/pages/practica/rmarkdownVoorbeeld.nb.html)
+Het bestand kan door RStudio gecompileerd worden tot een HTML pagina, en het resultaat vinden jullie in het bestand 
+[rmarkdownVoorbeeld](https://statomics.github.io/statistiekBasisCursus/pages/practica/rmarkdownVoorbeeld.html)
 
 
 Zo zie je makkelijk de correspondentie tussen de bron code en het gecompileerde bestand.
