@@ -31,12 +31,34 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 
 ### Assistenten
 
-- Bachelor of Science in de Biologie en Bachelor of Science in de Chemie: Koen Van den Berge (Koen dot VanDenBerge @ UGent dot  be)
-- Bachelor of Science in de Biochemie en Biotechnologie: Jeroen Gillis (Jeroen dot Gilis at UGent dot be)
+- Bachelor of Science in de Biologie en Bachelor of Science in de Chemie: Jeroen Gillis (Jeroen dot Gilis at UGent dot be)
+- Bachelor of Science in de Biochemie en Biotechnologie: Koen Van den Berge (Koen dot VanDenBerge @ UGent dot  be)
 - Bachelor of Science in de Biomedische Wetenschappen: Elke Debrie (Elke dot Debrie at UGent dot be)
 
 ### Praktisch
 - [Praktisch](assets/00-Afspraken.pdf)
+
+---
+
+### Software
+
+Tijdens de practica zullen we gebruik maken van het statistisch softwarepakket R, en de grafische user interface RStudio.
+Het is aangeraden dat om een eigen laptop te gebruiken voor de practica waarop je reeds R en RStudio geïnstalleerd hebben.
+
+[Installatie van statistisch software pakket R](pages/software/RStudio_installeren.html)
+
+
+Studenten die wensen gebruik te maken van de PCs in de PC-zalen kunnen Rstudie draaien via [Athena](https://athena.ugent.be). Dat is vaak instabiel. 
+Daarom vinden jullie hier ook een handleiding voor het aanmaken van een portable R/Rstudio versie die je mee kan nemen op USB-stick of op kan slaan op je H-schijf van de universiteit Gent. Zo heb je steeds je eigen software bij de hand zonder afhankelijk te zijn van Athena. 
+[Maak een protable versie van het software pakket R](pages/software/portable_RStudio.html)
+
+Tijdens de practica zullen we steeds gebruik maken van RMarkdown notebooks die toelaten om tekst, computercode en statistische output te combineren in een bestand. Het laat toe om de resultaten eenvoudig te rapporteren in een webpagina of een pdf bestand. 
+Voor de ontwikkeling van eigen Rmarkdown notebooks kan je steeds beroep doen op de online cursus nota's die heel veel code bevat en een handige RMarkdown-cheatsheet: [Rmarkdown Sheetsheet](assets/practica/rmarkdown-cheatsheet.pdf)
+
+Het is aangeraden om reeds vertrouwd te zijn met R en RStudio alvorens jullie het eerste practicum meevolgen.
+Er wordt verondersteld dat jullie volgende introductie zelfstandig doornemen [intro](zelfstudie.md).
+
+---
 
 ### Topics
 
@@ -45,7 +67,6 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 
   2. Belangrijke concepten & conventies
   - Slides: [Concepten](assets/02-Concepten.pdf)
-  - Practica: [Practicum 1](assets/practica/practicum1/overzichtP1.html)
 
   3. Studiedesign
   - Zelfstudie
