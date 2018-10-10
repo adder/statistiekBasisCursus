@@ -45,6 +45,7 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 
   2. Belangrijke concepten & conventies
   - Slides: [Concepten](assets/02-Concepten.pdf)
+  - Practica: [Practicum 1](assets/practica/practicum1/overzichtP1.html)
 
   3. Studiedesign
   - Zelfstudie
