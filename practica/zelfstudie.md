@@ -14,7 +14,7 @@ Het bestand vind je  hier [rmarkdownVoorbeeld.Rmd](https://statomics.github.io/s
 
 Open het bestand in RStudio, en neem het bestand door. 
 Het bestand kan door RStudio gecompileerd worden tot een HTML pagina, en het resultaat vinden jullie in het bestand 
-[rmarkdownVoorbeeld](https://statomics.github.io/statistiekBasisCursus/pages/practica/rmarkdownVoorbeeld.html)
+[rmarkdownVoorbeeld](https://statomics.github.io/statistiekBasisCursus/practica/rmarkdownVoorbeeld.nb.html)
 
 
 Zo zie je makkelijk de correspondentie tussen de bron code en het gecompileerde bestand.
