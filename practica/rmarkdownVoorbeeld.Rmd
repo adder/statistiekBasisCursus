@@ -24,9 +24,10 @@ output:
 ```
 
 Deze header wordt vaak standaard verwijderd als je markdown files download van het web. 
-Kopieer de header start vanaf drie mintekens tot en met de drie onderste mintekens.
+Kopieer de header, startende met de drie mintekens tot en met de drie onderste mintekens.
+
 Plak de header bovenaan je document en sla het document op. 
-Het document is nu gedefineerd als een interactieve html_notebook 
+Het document is nu gedefineerd als een interactieve html_notebook.
 
 ## Resultaat bekijken
 Door gebruik te maken van notebooks, kan je de wijzigingen die je maakt onmiddellijk opvolgen op een interactieve manier. 
