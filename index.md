@@ -49,14 +49,19 @@ Het is aangeraden dat om een eigen laptop te gebruiken voor de practica waarop j
 
 
 Studenten die wensen gebruik te maken van de PCs in de PC-zalen kunnen Rstudie draaien via [Athena](https://athena.ugent.be). Dat is vaak instabiel. 
-Daarom vinden jullie hier ook een handleiding voor het aanmaken van een portable R/Rstudio versie die je mee kan nemen op USB-stick of op kan slaan op je H-schijf van de universiteit Gent. Zo heb je steeds je eigen software bij de hand zonder afhankelijk te zijn van Athena. 
+Daarom vinden jullie hier ook een handleiding voor het aanmaken van een portable R/Rstudio versie die je mee kan nemen op USB-stick of op kan slaan op je H-schijf van de universiteit Gent. Zo heb je steeds je eigen software bij de hand zonder afhankelijk te zijn van Athena.
+ 
 [Maak een protable versie van het software pakket R](pages/software/portable_RStudio.html)
 
 Tijdens de practica zullen we steeds gebruik maken van RMarkdown notebooks die toelaten om tekst, computercode en statistische output te combineren in een bestand. Het laat toe om de resultaten eenvoudig te rapporteren in een webpagina of een pdf bestand. 
-Voor de ontwikkeling van eigen Rmarkdown notebooks kan je steeds beroep doen op de online cursus nota's die heel veel code bevat en een handige RMarkdown-cheatsheet: [Rmarkdown Sheetsheet](assets/practica/rmarkdown-cheatsheet.pdf)
+Voor de ontwikkeling van eigen Rmarkdown notebooks kan je steeds beroep doen op de online cursus nota's die heel veel code bevat en een handige RMarkdown-cheatsheet: 
+
+[Rmarkdown Sheetsheet](assets/practica/rmarkdown-cheatsheet.pdf)
 
 Het is aangeraden om reeds vertrouwd te zijn met R en RStudio alvorens jullie het eerste practicum meevolgen.
-Er wordt verondersteld dat jullie volgende introductie zelfstandig doornemen [intro](zelfstudie.md).
+Er wordt verondersteld dat jullie volgende introductie zelfstandig doornemen:
+
+[intro](zelfstudie.md).
 
 ---
 
