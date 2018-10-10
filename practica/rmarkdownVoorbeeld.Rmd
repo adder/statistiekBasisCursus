@@ -9,6 +9,25 @@ output:
 
 Met R MarkDown kan je gemakkelijk webpagina's, documenten en slides maken die tekst, R chunks, plots en Latex vergelijkingen bevatten. Tijdens de tutorialsessies zullen we altijd R Markdown gebruiken. R Markdown vervangt scripts en is erg handig omdat je extra opmerkingen kunt toevoegen aan de hoorcolleges en tutorials.
 
+## Header
+The markdown notebook start met een header.
+Het bevat ondermeer de titel, de namen van de auteurs en het type RMarkdown file. 
+We werken met typisch met interactieve html_notebooks tijdens de ontwikkeling van onze code.
+
+``` yaml
+---
+title: "Intro to MSqRob"
+author: "Namen Auteurs"
+output:
+  html_notebook: default
+---
+```
+
+Deze header wordt vaak standaard verwijderd als je markdown files download van het web. 
+Kopieer de header start vanaf drie mintekens tot en met de drie onderste mintekens.
+Plak de header bovenaan je document en sla het document op. 
+Het document is nu gedefineerd als een interactieve html_notebook 
+
 ## Resultaat bekijken
 Door gebruik te maken van notebooks, kan je de wijzigingen die je maakt onmiddellijk opvolgen op een interactieve manier. 
 Klik op Preview om de html versie van de notebook te zien. 
