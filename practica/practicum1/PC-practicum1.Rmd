@@ -1,7 +1,8 @@
 ---
 title: 'PC-practicum 1: beschrijvende statistiek'
 output:
-  html_notebook
+  html_document:
+    df_print: paged
 ---
 
 ## RStudio
@@ -29,13 +30,13 @@ In dit practicum beschouwen we de data van Lovett et al. (Voorbeeld 3.2). Zij be
  - NO3: concentratie (μmol/liter) nitrogeen oxide ionen
  - TON: concentratie (μmol/liter) totale organische nitrogenen
  - TN: concentratie (μmol/liter) totale nitrogenen
- - NH4: concentratie (μmol/liter) ammoniak ionen
+ - NH4: concentratie (μmol/liter) ammonium-ionen
  - DOC: concentratie (μmol/liter) opgeloste zuurstof
- - SO4: concentratie (μmol/liter) zwavel dioxide ionen
- - CL: concentratie (μmol/liter) chloride ionen
- - CA: concentratie (μmol/liter) calcium ionen
- - MG: concentratie (μmol/liter) magnesium ionen
- - H: concentratie (μmol/liter) waterstof ionen
+ - SO4: concentratie (μmol/liter) zwaveldioxide-ionen
+ - CL: concentratie (μmol/liter) chloride-ionen
+ - CA: concentratie (μmol/liter) calcium-ionen
+ - MG: concentratie (μmol/liter) magnesium-ionen
+ - H: concentratie (μmol/liter) waterstof-ionen
 
 
 ## Voorbereiding
@@ -68,7 +69,6 @@ De dataset bevindt zich nu in het `lovett` object.
 ```{r}
 lovett
 ```
-
 
 We kunnen bepaalde variabelen uit de dataset halen op verschillende manieren. 
 
@@ -154,7 +154,6 @@ Interpreteer zelf de boxplot:
  - Wat is de centrale dikke lijn in de box?
  - Hoeveel observaties verwacht je binnen de box?
  - Waarom gaan de whiskers ('snorharen') niet tot de laatste observaties?
- 
 
 Doe nu zelf de univariate inspectie voor ammonium ($NH_4^+$).
 
@@ -186,10 +185,10 @@ plot(HEIGHT, NH4) # scatterplot. zie ?plot
 boxplot(NH4 ~ HEIGHT)
 ```
 
-Zijn er relatief gezien meer $NH_4^+$ concentraties (`NH4CAT` = 0) voor de hoger of lager gelegen sites? Merkt u een verband tussen de hoogte van de site en$NH_4^+$ concentratie?
+Zijn er relatief gezien meer $NH_4^+$ concentraties kleiner dan $1.5 \mu mol/l$ (`NH4CAT` = 0) voor de hoger of lager gelegen sites? Merkt u een verband tussen de hoogte van de site en de $NH_4^+$ concentratie?
 
 ```{r}
-table(HEIGHT,NH4CAT)
+table(HEIGHT, NH4CAT)
 ```
 
 Maak een scatterplot van de $NH_4^+$ concentratie in functie van de hoogte van de site en beschrijf de geobserveerde associatie. Bereken ook de correlatie. Hoe zou de puntenwolk van de scatterplot eruit zien indien de $NH_4^+$ concentratie en de hoogte van de site niet geassocieerd waren?
@@ -198,7 +197,7 @@ Maak een scatterplot van de $NH_4^+$ concentratie in functie van de hoogte van d
 SAMPELEV <- lovett$SAMPELEV
 par(mfrow=c(1,1))
 plot(SAMPELEV,NH4)
-lines(lowess(SAMPELEV,NH4)) #trekt een flexibele lijn door de puntenwolk. Wil je weten hoe lowess werkt? Zie de paragraaf 'loess' hier: https://simplystatistics.org/2017/08/08/code-for-my-educational-gifs/ 
+lines(lowess(SAMPELEV,NH4)) # Trekt een flexibele lijn door de puntenwolk. Wil je weten hoe lowess werkt? Zie de paragraaf 'loess' hier: https://simplystatistics.org/2017/08/08/code-for-my-educational-gifs/ 
 ```
 
 ```{r}
