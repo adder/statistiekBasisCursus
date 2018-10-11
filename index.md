@@ -44,9 +44,10 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 
 Tijdens de practica zullen we gebruik maken van het statistisch softwarepakket R, en de grafische user interface RStudio.
 Het is aangeraden dat om een eigen laptop te gebruiken voor de practica waarop je reeds R en RStudio geïnstalleerd hebben.
-Studenten die opteren om de computers in de PC-zalen te gebruiken nemen ook best deze handleiding door. Er staat ook beschreven hoe je een lokale versie van R/RStudio kunt installeren op een USB-stick die je dan op alle PCs kan gebruiken zodat je steeds je eigen versie bij hebt. 
 
-[Installatie van statistisch software pakket R](pages/software/RStudio_installeren.html) 
+[Installatie van statistisch software pakket R](pages/software/RStudio_installeren.html)
+
+Als je RStudio op athena draait, is het belangrijk dat je voldoende plaats hebt op je netwerk drive (H-schijf) van de universiteit en dat je de work directory en data zich ook op deze drive bevindt. Het gebruik van work directories en data vanop je eigen laptop of computer zorgt voor onnodige belasting van het netwerk, leidt tot traag runnen van RStudio en instabiliteit.
 
 Tijdens de practica zullen we steeds gebruik maken van RMarkdown notebooks die toelaten om tekst, computercode en statistische output te combineren in een bestand. Het laat toe om de resultaten eenvoudig te rapporteren in een webpagina of een pdf bestand. 
 Voor de ontwikkeling van eigen Rmarkdown notebooks kan je steeds beroep doen op de online cursus nota's die heel veel code bevat en een handige RMarkdown-cheatsheet: 
