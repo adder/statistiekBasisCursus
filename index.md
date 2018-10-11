@@ -49,10 +49,8 @@ Het is aangeraden dat om een eigen laptop te gebruiken voor de practica waarop j
 
 Je kan ook gebruik maken van RStudio op het [Athena](https://athena.ugent.be) van Universiteit Gent. Dan is het wel belangrijk dat je voldoende plaats hebt op je netwerk drive (H-schijf) van de universiteit en dat je work directory en data zich ook op deze drive bevinden. Het gebruik van work directories en data vanop je eigen laptop of computer zorgt voor onnodige belasting van het netwerk, leidt tot traag runnen van RStudio en instabiliteit.
 
-Om snel een aantal zaken te testen zonder R te installeren, kan er ook gebruik gemaakt worden van RStudio in je webbrowser via de binder link die gekoppeld is aan de cursus site. Let op dat deze R sessies wel snel verlopen bij inactiviteit.
+Om snel een aantal zaken te testen zonder R te installeren, kan er ook gebruik gemaakt worden van RStudio in je webbrowser via de binder link die gekoppeld is aan de cursus site. Let op dat deze R sessies wel snel verlopen bij inactiviteit en zijn niet optimaal om lang mee te werken. Alle Rmarkdown files voor de cursus vind je in de folder practica op RStudio in de browser.
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/statOmics/statistiekBasisCursus/master?urlpath=rstudio)
-Je kan files en RMarkdown scripts uploaden naar RStudio in de webbrowser via de "Upload tab" in het venster rechts onder in Rstudio.
-![binderUpload](./assets/binderUpload.png)
 
 
 Tijdens de practica zullen we steeds gebruik maken van RMarkdown notebooks die toelaten om tekst, computercode en statistische output te combineren in een bestand. Het laat toe om de resultaten eenvoudig te rapporteren in een webpagina of een pdf bestand. 
