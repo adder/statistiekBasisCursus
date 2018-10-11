@@ -2,6 +2,8 @@
 title: "Intro to MSqRob"
 author: "Lieven Clement en Ludger Goeminne"
 output:
+  html_document:
+    df_print: paged
   html_notebook: default
 ---
 
@@ -277,7 +279,7 @@ EndangeredSpecies$taxon
 Data importeren in R kan via de functie `read.table`. Hierbij moet je het pad naar je bestand defini??ren en een separator opgeven (bv. "\\t" als het een tab-delimited file is, "," als het een komma is, etc.). Wij zullen er altijd voor zorgen dat je een werkend bestand kunt importeren. Als je ook offline wil kunnen werken, kan je altijd het bestand downloaden en (in plaats van de hyperlink) verwijzen naar de bestandslocatie op je computer.
 
 ```{r}
-path <- "https://raw.githubusercontent.com/statOmics/statistiekBasisCursus/gh-pages/assets/practica/practicum1/data/lovett.dat"
+path <- "https://raw.githubusercontent.com/statOmics/statistiekBasisCursus/gh-pages/practica/practicum1/data/lovett.dat"
 
 lovett <- read.table(path, header = TRUE, sep = "\t", dec = ",")
 lovett
