@@ -1,0 +1,206 @@
+---
+title: 'PC-practicum 1: beschrijvende statistiek'
+output:
+  html_notebook
+---
+
+## RStudio
+
+Start RStudio via Athena of installeer het thuis gratis via <https://www.rstudio.com/products/RStudio/>.
+
+Rstudio bestaat uit 
+
+- console (vraag-antwoord principe & case-sensitive)
+- scriptfile (.R) of Markdownfile (.Rmd)
+- workspace & history
+- files/plots/...
+
+
+# Oefening 1
+
+In dit practicum beschouwen we de data van Lovett et al. (Voorbeeld 3.2). Zij bestudeerden de chemische eigenschappen van beboste stroomgebieden in de Catskill bergen in New York State. Ze kozen een aantal sites op eerste en tweede orde stromen en maten de concentraties van 10 chemische variabelen, waaronder concentraties $SO_4^{2−}$ , $Cl^−$ en $NH_4^+$ (in $\mu$mol per liter), gemiddeld over 3 jaren, en 4 eigenschappen van de onderzochte stroomgebieden. We gaan naast een eerste verkenning van de data ook trachten inzicht te krijgen in de associatie tussen de hoogte van de studiesite en de $NH_4^+$ concentratie. De dataset bestaat uit volgende variabelen:
+
+ - STREAM: naam van de stroom (site)
+ - MAXELEV: maximum hoogte van de rivier (m boven zeespiegel)
+ - SAMPELEV: hoogte van de site (m boven zeespiegel)
+ - LENGTH: lengte van de stroom
+ - AREA: grootte van het stroomgebied
+ - HEIGHT: 1 hoogte site is minstens 500 m boven zeespiegel, 0 alle resterende stalen
+ - NO3: concentratie (μmol/liter) nitrogeen oxide ionen
+ - TON: concentratie (μmol/liter) totale organische nitrogenen
+ - TN: concentratie (μmol/liter) totale nitrogenen
+ - NH4: concentratie (μmol/liter) ammoniak ionen
+ - DOC: concentratie (μmol/liter) opgeloste zuurstof
+ - SO4: concentratie (μmol/liter) zwavel dioxide ionen
+ - CL: concentratie (μmol/liter) chloride ionen
+ - CA: concentratie (μmol/liter) calcium ionen
+ - MG: concentratie (μmol/liter) magnesium ionen
+ - H: concentratie (μmol/liter) waterstof ionen
+
+
+## Voorbereiding
+
+We zullen nu de dataset lovett.dat inlezen. Dat kan op twee manieren:
+
+ - via Import dataset (rechts bovenaan in RStudio) > From Text File
+ - via onderstaand commando (opletten met locatie!). Dit commando neemt aan dat de `lovett.dat` file zich in `H:/R/` bevindt; dus op je H schijf in folder R. Indien dit niet zo is, verander je dit pad!
+
+```{r}
+path <- "https://raw.githubusercontent.com/statOmics/statistiekBasisCursus/gh-pages/practica/practicum1/data/lovett.dat"
+path
+lovett <- read.table(path, header = TRUE, sep = "\t", dec = ",")
+```
+
+Als je niet weet wat een commando precies doet, of wat mogelijke argumenten zijn die je kan ingeven bij een commando, kan je de help-file van dit commando opvragen door het gebruik van een vraagteken. Bijvoorbeeld:
+
+```{r}
+?read.table
+```
+
+Dit vertelt ons dat het
+
+ - `header = TRUE` argument gebruikt wordt om te zeggen dat de eerste rij de namen van de variabelen aanduidt;
+ - `sep = "\t"` argument aanduidt dat de waarden in de text file gescheiden worden door een tab;
+ - `dec = ","` argument aanduidt dat de komma gebruikt wordt voor decimale getallen.
+
+De dataset bevindt zich nu in het `lovett` object. 
+
+```{r}
+lovett
+```
+
+
+We kunnen bepaalde variabelen uit de dataset halen op verschillende manieren. 
+
+```{r}
+lovett$STREAM # Werkt enkel bij data.frame. Niet bij matrix.
+lovett[,"STREAM"]
+lovett[,1] # STREAM variabele is in de eerste kolom
+# Het selecteren van een kolom geeft een vector terug, en deze kunen we opnieuw subsetten.
+lovett$STREAM[3] # Derde element in de STREAM kolom
+```
+
+### Hoeveel studiesites (stromen) werden geobserveerd?
+
+```{r}
+nrow(lovett)
+```
+
+### Stel dat u voor een bepaalde site 0 μmol/liter $NH_4^+$ ionen had gemeten, zou u dit dan als een $0$ ingeven of als een ontbrekende waarde (NA)?
+
+Dit zouden we als een $0$ ingeven. De waarde nul heeft hier immers een betekenis: we hebben een correcte meting gedaan en geobserveerd dat het aantal $NH_4^+$ ionen gelijk is aan 0 μmol/liter. Indien men dit als een ontbrekende waarde(`NA`) zou opgeven, geeft dit een vertekend beeld. Denk bijvoorbeeld aan het berekenen van het gemiddelde over alle stromen: Een waarde $0$ kan gebruikt worden, maar een `NA` niet, en wordt simpelweg genegeerd.
+
+Een ontbrekende waarde (`NA`) betekent dat we geen meting gedaan hebben. Moesten we bijvoorbeeld op die plaats niet gemeten hebben, of we constateren achteraf bijvoorbeeld dat ons toestel niet correct gecalibreerd was waardoor de meting onjuist is, dan zullen we deze onjuiste waarde verwijderen en `NA` ingeven. In dat geval mogen we zeker geen 0-waarde ingeven.
+
+## Univariate inspectie van de gegevens.
+
+### Univariate inspectie van discrete gegevens: De variabele HEIGHT
+
+Hoeveel sites hebben een ligging meer of minder dan 500 m boven de zeespiegel? Maak hiertoe een frequentietabel en een staafdiagram.
+
+```{r}
+table(lovett$HEIGHT)
+tab <- table(lovett$HEIGHT)
+tab
+barplot(tab, names=c("<500",">500"))
+```
+
+### Univariate inspectie van continue variabelen NH4, SO4, CL
+
+# Voorbeeld voor CL
+```{r}
+CL <- lovett$CL
+mean(CL)
+median(CL)
+```
+
+Het gemiddelde is hier groter dan de mediaan.
+Is dit altijd zo? 
+Verklaring?
+Wat is de beste maat voor centrale locatie?
+
+```{r}
+standdev <- sqrt(var(CL))
+##of
+standdev <- sd(CL)
+standdev
+
+# 25% en 75% kwantiel
+q <- quantile(CL, probs = c(.25,.75))
+q
+
+# Interkwartielafstand
+interkw <- q[2] - q[1]
+interkw
+##of
+IQR(CL)
+```
+
+Beste maat voor spreiding concentratie? 
+
+```{r}
+min(CL)
+max(CL)
+```
+
+Boxplot voor CL
+
+```{r}
+boxplot(CL)
+```
+
+Interpreteer zelf de boxplot:
+
+ - Wat is de centrale dikke lijn in de box?
+ - Hoeveel observaties verwacht je binnen de box?
+ - Waarom gaan de whiskers ('snorharen') niet tot de laatste observaties?
+ 
+
+Doe nu zelf de univariate inspectie voor ammonium ($NH_4^+$).
+
+### Maak een variable `NH4CAT` aan
+
+De variabele dient voor elke stroom aan te geven of diens gemeten concentratie lager is dan $1.5 \mu mol/l$ of niet.
+
+```{r}
+NH4 <- lovett$NH4
+NH4CAT <- ifelse(NH4 < 1.5, 0, 1) # 0: NH4 < 1.5; 1: NH4 $\geq$ 1.5
+table(NH4CAT)
+
+## of
+
+NH4CAT2 <- vector(length = nrow(lovett))
+NH4CAT2[NH4 < 1.5] <- 0
+NH4CAT2[NH4 >= 1.5] <- 1
+table(NH4CAT2)
+```
+
+### Bivariate beschrijving van de gegevens
+
+Vergelijk de $NH_4^+$ concentraties tussen de twee `HEIGHT` groepen op een exploratieve wijze.
+
+```{r}
+HEIGHT <- lovett$HEIGHT
+par(mfrow = c(1,2)) # Deel het scherm op in twee kolommen
+plot(HEIGHT, NH4) # scatterplot. zie ?plot
+boxplot(NH4 ~ HEIGHT)
+```
+
+Zijn er relatief gezien meer $NH_4^+$ concentraties (`NH4CAT` = 0) voor de hoger of lager gelegen sites? Merkt u een verband tussen de hoogte van de site en$NH_4^+$ concentratie?
+
+```{r}
+table(HEIGHT,NH4CAT)
+```
+
+Maak een scatterplot van de $NH_4^+$ concentratie in functie van de hoogte van de site en beschrijf de geobserveerde associatie. Bereken ook de correlatie. Hoe zou de puntenwolk van de scatterplot eruit zien indien de $NH_4^+$ concentratie en de hoogte van de site niet geassocieerd waren?
+
+```{r}
+SAMPELEV <- lovett$SAMPELEV
+par(mfrow=c(1,1))
+plot(SAMPELEV,NH4)
+lines(lowess(SAMPELEV,NH4)) #trekt een flexibele lijn door de puntenwolk. Wil je weten hoe lowess werkt? Zie de paragraaf 'loess' hier: https://simplystatistics.org/2017/08/08/code-for-my-educational-gifs/ 
+```
+
+```{r}
+cor(SAMPELEV,NH4)
+```

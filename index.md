@@ -75,6 +75,7 @@ Er wordt verondersteld dat jullie volgende introductie zelfstandig doornemen:
 
   4. Data exploratie en beschrijvende statistiek
   - Slides: [Data exploratie](assets/04-DataExploratie.pdf)
+  - Tutorial: [Data exploratie](practica/practicum1/PC-practicum1.html), [RMarkdown file](practica/practicum1/PC-practicum1.Rmd)
 
   5. Statistische besluitvorming
   - Slides: [Statistische Besluitvorming](assets/05-StatisticalInference.pdf)
