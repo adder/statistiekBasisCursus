@@ -1,5 +1,5 @@
 ---
-title: "Intro to MSqRob"
+title: "Introductie tot R Markdown notebooks"
 author: "Namen Auteurs"
 output:
   html_notebook: default
@@ -34,6 +34,9 @@ Door gebruik te maken van notebooks, kan je de wijzigingen die je maakt onmiddel
 Klik op Preview om de html versie van de notebook te zien. 
 
 Je zal zien dat de R-code nog niet is uitgevoerd. Hier komen we verder op terug.
+Op Windows is het soms zo dat de preview functie pas werkt nadat er een wijziging werd uitgevoerd aan de file en deze werd opgeslagen. 
+Je kan bijvoorbeeld een spatie toevoegen en de file opslaan ...
+Daarna zou de preview functie een resultaat moeten weergeven.
 
 ## Opmaak
 
@@ -289,12 +292,11 @@ lovett
 
 ## Integreer R-resultaten inline in de tekst.
 
-We voegen het gemiddelde van `e1` inline toe en we zullen het afronden op twee cijfers. Hiervoor maken we gebruik van de omgeving die begint met "\`r" en eindigt met "\`". Het gemiddelde van `e1` is gelijk aan `r round(mean(e1), 2)`.
+We voegen het gemiddelde van 100 gesimuleerde datapunten inline toe en we zullen het afronden op twee cijfers. Hiervoor maken we gebruik van de omgeving die begint met "\`r" en eindigt met "\`". Het gemiddelde van een willekeurige steekproef met 100 observaties getroken uit een standaard normaal verdeling is gelijk aan `r round(mean(rnorm(100)), 2)`.
 
 ## Toevoegen van formules door latexvergelijkingen te gebruiken
 
 Je kunt ook vergelijkingen toevoegen met behulp van dubbele \$\$ - tekens, bijvoorbeeld:
 $$y_i = \beta_0 + \beta_1 x_i + \epsilon_i$$
 Je kunt ook inline-latexcode toevoegen met behulp van enkele \$ - tekens. Bijvoorbeeld het steekproefgemiddelde van y:
-$\bar{y}=\sum\limits_{i=1}^{n}\frac{y_i}{n}$ equals $\bar{y}=$ 
-`r round(mean(y),2)`.
+$\bar{y}=\sum\limits_{i=1}^{n}\frac{y_i}{n}$

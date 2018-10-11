@@ -47,12 +47,12 @@ Het is aangeraden dat om een eigen laptop te gebruiken voor de practica waarop j
 
 [Installatie van statistisch software pakket R](pages/software/RStudio_installeren.html)
 
-Als je RStudio op athena draait, is het belangrijk dat je voldoende plaats hebt op je netwerk drive (H-schijf) van de universiteit en dat je de work directory en data zich ook op deze drive bevindt. Het gebruik van work directories en data vanop je eigen laptop of computer zorgt voor onnodige belasting van het netwerk, leidt tot traag runnen van RStudio en instabiliteit.
+Als je RStudio op [Athena](https://athena.ugent.be) draait, is het belangrijk dat je voldoende plaats hebt op je netwerk drive (H-schijf) van de universiteit en dat je work directory en data zich ook op deze drive bevinden. Het gebruik van work directories en data vanop je eigen laptop of computer zorgt voor onnodige belasting van het netwerk, leidt tot traag runnen van RStudio en instabiliteit.
 
 Tijdens de practica zullen we steeds gebruik maken van RMarkdown notebooks die toelaten om tekst, computercode en statistische output te combineren in een bestand. Het laat toe om de resultaten eenvoudig te rapporteren in een webpagina of een pdf bestand. 
 Voor de ontwikkeling van eigen Rmarkdown notebooks kan je steeds beroep doen op de online cursus nota's die heel veel code bevat en een handige RMarkdown-cheatsheet: 
 
-[Rmarkdown Sheetsheet](practica/rmarkdown-cheatsheet.pdf)
+[Rmarkdown cheatsheet](practica/rmarkdown-cheatsheet.pdf)
 
 Het is aangeraden om reeds vertrouwd te zijn met R en RStudio alvorens jullie het eerste practicum meevolgen.
 Er wordt verondersteld dat jullie volgende introductie zelfstandig doornemen:
