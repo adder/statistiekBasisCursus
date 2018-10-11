@@ -47,7 +47,7 @@ Het is aangeraden dat om een eigen laptop te gebruiken voor de practica waarop j
 
 [Installatie van statistisch software pakket R](pages/software/RStudio_installeren.html)
 
-Als je RStudio op [Athena](https://athena.ugent.be) draait, is het belangrijk dat je voldoende plaats hebt op je netwerk drive (H-schijf) van de universiteit en dat je work directory en data zich ook op deze drive bevinden. Het gebruik van work directories en data vanop je eigen laptop of computer zorgt voor onnodige belasting van het netwerk, leidt tot traag runnen van RStudio en instabiliteit.
+Je kan ook gebruik maken van RStudio op [Athena](https://athena.ugent.be). Dan is het wel belangrijk dat je voldoende plaats hebt op je netwerk drive (H-schijf) van de universiteit en dat je work directory en data zich ook op deze drive bevinden. Het gebruik van work directories en data vanop je eigen laptop of computer zorgt voor onnodige belasting van het netwerk, leidt tot traag runnen van RStudio en instabiliteit.
 
 Om snel een aantal zaken te testen kan er ook gebruik gemaakt worden van RStudio in je webbrowser via de binder link die gekoppeld is aan de cursus site. 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/statOmics/statistiekBasisCursus/master?urlpath=rstudio)
