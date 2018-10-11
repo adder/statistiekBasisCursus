@@ -44,6 +44,7 @@ Er wordt verwacht dat u de cursus grondig studeert ter voorbereiding van het exa
 
 Tijdens de practica zullen we gebruik maken van het statistisch softwarepakket R, en de grafische user interface RStudio.
 Het is aangeraden dat om een eigen laptop te gebruiken voor de practica waarop je reeds R en RStudio geïnstalleerd hebben.
+Studenten die opteren om de computers in de PC-zalen te gebruiken nemen ook best deze handleiding door. Er staat ook beschreven hoe je een lokale versie van R/RStudio kunt installeren op een USB-stick die je dan op alle PCs kan gebruiken zodat je steeds je eigen versie bij hebt. 
 
 [Installatie van statistisch software pakket R](pages/software/RStudio_installeren.html) 
 
