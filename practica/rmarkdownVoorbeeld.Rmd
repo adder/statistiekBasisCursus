@@ -10,9 +10,9 @@ output:
 Met R MarkDown kan je gemakkelijk webpagina's, documenten en slides maken die tekst, R chunks, plots en Latex vergelijkingen bevatten. Tijdens de tutorialsessies zullen we altijd R Markdown gebruiken. R Markdown vervangt scripts en is erg handig omdat je extra opmerkingen kunt toevoegen aan de hoorcolleges en tutorials.
 
 ## Header
-The markdown notebook start met een header.
+De markdown notebook start met een header.
 Het bevat ondermeer de titel, de namen van de auteurs en het type RMarkdown file. 
-We werken met typisch met interactieve html_notebooks tijdens de ontwikkeling van onze code.
+We werken typisch met interactieve html_notebooks tijdens de ontwikkeling van onze code.
 
 ``` yaml
 ---
@@ -31,7 +31,7 @@ Het document is nu gedefineerd als een interactieve html_notebook.
 
 ## Resultaat bekijken
 Door gebruik te maken van notebooks, kan je de wijzigingen die je maakt onmiddellijk opvolgen op een interactieve manier. 
-Klik op Preview om de html versie van de notebook te zien. 
+Klik op Preview bovenaan in je RStudio venster om de html versie van de notebook te zien. 
 
 Je zal zien dat de R-code nog niet is uitgevoerd. Hier komen we verder op terug.
 Op Windows is het soms zo dat de preview functie pas werkt nadat er een wijziging werd uitgevoerd aan de file en deze werd opgeslagen. 
@@ -57,6 +57,7 @@ Je kunt titels toevoegen met behulp van het hekje \#
 #### enz.
 
 # Integreer tekst en R-code
+
 ## Eenvoudige berekeningen
 
 Je kunt stukjes R-code integreren in je RMarkdown-bestand. Dit doe je door een omgeving te maken die begint met \`\`\`{r} en eindigt met \`\`\`. 
@@ -66,8 +67,9 @@ Hieronder zullen we R-code demonstreren aan de hand van verschillende voorbeelde
 Je kunt RStudio bijvoorbeeld gebruiken als een rekenmachine. Code uitvoeren kan je op verschillende manieren
  - door in een stukje code met je muis te klikken en dan via de "Run"-knop bovenaan in de console op "Run current chunck" te klikken.
  - Door op het groene pijltje te klikken rechts van de chunk. 
+ - Door je cursor in/naast de regel te zetten en de toetsencombinatie Ctrl+Enter (Mac: Cmd+Enter) uit te voeren.
 
-Telkens je het document opslaat dan wordt de webpagina geupdatet.
+Telkens je het document opslaat wordt dan de webpagina (html-file) geupdatet.
 
 Laat de onderstaande code lopen. Sla op en bekijk het resultaat in je html file.
 
@@ -145,7 +147,7 @@ Dit commando opende het helpvenster voor de `rnorm`-functie. We zien dat we voor
 e2 <- rnorm(101, mean = 5, sd = 2)
 ```
 
-We willen nu graag een histogram maken van `e1` en `e2`. Hoe vinden we de correcte functie? Het internet is onze bondgenoot. We googelen "histogram R function". Hiermee vinden we snel dat `hist` de functie is de we zoeken. We maken de histogrammen.
+We willen nu graag een histogram maken van `e1` en `e2`. **Hoe vinden we de correcte functie? Het internet is onze bondgenoot.** We googelen "histogram R function". Hiermee vinden we snel dat `hist` de functie is de we zoeken. We maken de histogrammen.
 
 ```{r}
 hist(e1)
