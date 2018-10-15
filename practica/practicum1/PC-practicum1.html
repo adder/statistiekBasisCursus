@@ -92,9 +92,6 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
 }
@@ -161,10 +158,14 @@ $(document).ready(function () {
 </ul>
 <div id="voorbereiding" class="section level2">
 <h2>Voorbereiding</h2>
-<p>We zullen nu de dataset lovett.dat inlezen. Dat kan op twee manieren:</p>
+<p>We zullen nu de dataset lovett.dat inlezen. Dat kan op verschillende manieren:</p>
+<ul>
+<li>via de link naar de dataset op onze website (<a href="https://statomics.github.io/statistiekBasisCursus/" class="uri">https://statomics.github.io/statistiekBasisCursus/</a>), dit is erg makkelijk aangezien je de dataset niet manueel hoeft te downloaden en diens locatie niet hoeft aan te duiden in R.</li>
+<li>Manueel downloaden en inlezen
 <ul>
 <li>via Import dataset (rechts bovenaan in RStudio) &gt; From Text File</li>
-<li>via onderstaand commando (opletten met locatie!). Dit commando neemt aan dat de <code>lovett.dat</code> file zich in <code>H:/R/</code> bevindt; dus op je H schijf in folder R. Indien dit niet zo is, verander je dit pad!</li>
+<li>via de <code>read.table</code> functie zoals onderaan gebeurt. Echter, als je de dataset manueel hebt gedownload, dan moet je aan R verduidelijken waar je de dataset hebt opgeslaan. Indien je de dataset bijvoorbeeld hebt op opgeslaan in de folder R op je H-schijf, dan kan je de path variabele aanpassen als <code>path &lt;- &quot;H:/R/lovett.dat&quot;</code>. Dit commando neemt aan dat de <code>lovett.dat</code> file zich in <code>H:/R/</code> bevindt; dus op je H schijf in folder R. Indien dit niet zo is, verander je dit pad naar de correcte locatie.</li>
+</ul></li>
 </ul>
 <pre class="r"><code>path &lt;- &quot;https://raw.githubusercontent.com/statOmics/statistiekBasisCursus/gh-pages/practica/practicum1/data/lovett.dat&quot;
 path</code></pre>
@@ -262,7 +263,9 @@ mean(CL)</code></pre>
 <pre><code>## [1] 20.55</code></pre>
 <p>Het gemiddelde is hier groter dan de mediaan. Is dit altijd zo? Verklaring? Wat is de beste maat voor centrale locatie?</p>
 <pre class="r"><code>standdev &lt;- sqrt(var(CL))
-##of
+standdev</code></pre>
+<pre><code>## [1] 12.46261</code></pre>
+<pre class="r"><code>##of ook:
 standdev &lt;- sd(CL)
 standdev</code></pre>
 <pre><code>## [1] 12.46261</code></pre>
@@ -276,7 +279,7 @@ interkw &lt;- q[2] - q[1]
 interkw</code></pre>
 <pre><code>##   75% 
 ## 7.025</code></pre>
-<pre class="r"><code>##of
+<pre class="r"><code>##of ook:
 IQR(CL)</code></pre>
 <pre><code>## [1] 7.025</code></pre>
 <p>Beste maat voor spreiding concentratie?</p>
@@ -298,7 +301,7 @@ IQR(CL)</code></pre>
 <h3>Maak een variable <code>NH4CAT</code> aan</h3>
 <p>De variabele dient voor elke stroom aan te geven of diens gemeten concentratie lager is dan <span class="math inline">\(1.5 \mu mol/l\)</span> of niet.</p>
 <pre class="r"><code>NH4 &lt;- lovett$NH4
-NH4CAT &lt;- ifelse(NH4 &lt; 1.5, 0, 1) # 0: NH4 &lt; 1.5; 1: NH4 $\geq$ 1.5
+NH4CAT &lt;- ifelse(NH4 &lt; 1.5, 0, 1) # 0: NH4 &lt; 1.5; 1: NH4 &gt;= 1.5
 table(NH4CAT)</code></pre>
 <pre><code>## NH4CAT
 ##  0  1 

@@ -1,8 +1,7 @@
 ---
 title: 'PC-practicum 1: beschrijvende statistiek'
 output:
-  html_document:
-    df_print: paged
+  html_notebook
 ---
 
 ## RStudio
@@ -41,10 +40,12 @@ In dit practicum beschouwen we de data van Lovett et al. (Voorbeeld 3.2). Zij be
 
 ## Voorbereiding
 
-We zullen nu de dataset lovett.dat inlezen. Dat kan op twee manieren:
+We zullen nu de dataset lovett.dat inlezen. Dat kan op verschillende manieren:
 
- - via Import dataset (rechts bovenaan in RStudio) > From Text File
- - via onderstaand commando (opletten met locatie!). Dit commando neemt aan dat de `lovett.dat` file zich in `H:/R/` bevindt; dus op je H schijf in folder R. Indien dit niet zo is, verander je dit pad!
+ - via de link naar de dataset op onze website (https://statomics.github.io/statistiekBasisCursus/), dit is erg makkelijk aangezien je de dataset niet manueel hoeft te downloaden en diens locatie niet hoeft aan te duiden in R.
+ - Manueel downloaden en inlezen
+    + via Import dataset (rechts bovenaan in RStudio) > From Text File
+    + via de `read.table` functie zoals onderaan gebeurt. Echter, als je de dataset manueel hebt gedownload, dan moet je aan R verduidelijken waar je de dataset hebt opgeslaan. Indien je de dataset bijvoorbeeld hebt op opgeslaan in de folder R op je H-schijf, dan kan je de path variabele aanpassen als `path <- "H:/R/lovett.dat"`. Dit commando neemt aan dat de `lovett.dat` file zich in `H:/R/` bevindt; dus op je H schijf in folder R. Indien dit niet zo is, verander je dit pad naar de correcte locatie.
 
 ```{r}
 path <- "https://raw.githubusercontent.com/statOmics/statistiekBasisCursus/gh-pages/practica/practicum1/data/lovett.dat"
@@ -121,7 +122,8 @@ Wat is de beste maat voor centrale locatie?
 
 ```{r}
 standdev <- sqrt(var(CL))
-##of
+standdev
+##of ook:
 standdev <- sd(CL)
 standdev
 
@@ -132,7 +134,7 @@ q
 # Interkwartielafstand
 interkw <- q[2] - q[1]
 interkw
-##of
+##of ook:
 IQR(CL)
 ```
 
@@ -163,7 +165,7 @@ De variabele dient voor elke stroom aan te geven of diens gemeten concentratie l
 
 ```{r}
 NH4 <- lovett$NH4
-NH4CAT <- ifelse(NH4 < 1.5, 0, 1) # 0: NH4 < 1.5; 1: NH4 $\geq$ 1.5
+NH4CAT <- ifelse(NH4 < 1.5, 0, 1) # 0: NH4 < 1.5; 1: NH4 >= 1.5
 table(NH4CAT)
 
 ## of
