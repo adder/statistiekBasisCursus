@@ -2,7 +2,7 @@
 title: "Introductie tot R Markdown notebooks"
 author: "Namen Auteurs"
 output:
-  html_notebook: default
+  html_notebook
 ---
 
 # Introductie tot R, RStudio en R Markdown
@@ -16,7 +16,7 @@ We werken met typisch met interactieve html_notebooks tijdens de ontwikkeling va
 
 ``` yaml
 ---
-title: "Intro to MSqRob"
+title: "Introductie tot R Markdown notebooks"
 author: "Namen Auteurs"
 output:
   html_notebook: default
