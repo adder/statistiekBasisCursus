@@ -81,7 +81,7 @@ Er wordt verondersteld dat jullie volgende introductie zelfstandig doornemen:
   - Slides: [Data exploratie](assets/04-DataExploratie.pdf)
   - Tutorial:
     + Bachelor in Biochemie en Biotechnologie: [Slides](practica/practicum1/class1_kvdb.pdf), [Data exploratie](practica/practicum1/PC-practicum1.html), [Data exploratie RMarkdown file](practica/practicum1/PC-practicum1.Rmd)
-    + Bachelor in Biologie en Bachlor in Chemie: [Slides](practica/practicum1/slides_Koen_adapted.pdf), [Data exploratie](practica/practicum1/PC-practicum1.html), [Data exploratie RMarkdown file](practica/practicum1/PC-practicum1.Rmd)
+    + Bachelor in Biologie en Bachelor in Chemie: [Slides](practica/practicum1/slides_Koen_adapted.pdf), [Data exploratie](practica/practicum1/PC-practicum1.html), [Data exploratie RMarkdown file](practica/practicum1/PC-practicum1.Rmd)
 
   5. Statistische besluitvorming
   - Slides: [Statistische Besluitvorming](assets/05-StatisticalInference.pdf)
